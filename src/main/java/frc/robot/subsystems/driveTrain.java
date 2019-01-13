@@ -55,8 +55,12 @@ public class driveTrain extends Subsystem {
     setDefaultCommand(new driveManual());
   }
 
-  public void drive(double left, double right) {
+  public void driveTank(double left, double right) {
     differentialDrive.tankDrive(left, right);
+  }
+  
+  public void driveArcade(double speed, double rotation) {
+    differentialDrive.arcadeDrive(speed, rotation);
   }
 
   public void stop() {

@@ -25,13 +25,24 @@ public class driveManual extends Command {
   // Called repeatedly when this Command is scheduled to run
   @Override
   protected void execute() {
+  
+  // Use the Code below for tankDrive.  
     double left;
     double right;
     
     left = Robot.oi.getJoystick1().getRawAxis(1);
     right = Robot.oi.getJoystick1().getRawAxis(5);
     	
-    Robot.driveTrain.drive(left, right);
+    Robot.driveTrain.driveTank(left, right);
+
+    // Use the Code below for arcadeDrive.  Comment out the code above.
+    //double speed;
+    //double rotation;
+    
+    //speed = Robot.oi.getJoystick1().getRawAxis(1);
+    //rotation = Robot.oi.getJoystick1().getRawAxis(4);
+
+    //Robot.driveTrain.driveArcade(speed, rotation);
   }
 
   // Make this return true when this Command no longer needs to run execute()

@@ -28,7 +28,7 @@ public class driveFwdAuto extends Command {
   @Override
   protected void execute() {
     // This is how fast the robot will drive
-    Robot.driveTrain.drive(.5, .5);
+    Robot.driveTrain.driveTank(.5, .5);
   }
 
   // Make this return true when this Command no longer needs to run execute()
