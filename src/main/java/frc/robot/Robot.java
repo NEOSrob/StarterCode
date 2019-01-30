@@ -28,7 +28,6 @@ public class Robot extends TimedRobot {
   public static OI oi;
 
   Command m_autonomousCommand;
-
   SendableChooser<Command> m_chooser = new SendableChooser<>();
 
   /**
@@ -93,7 +92,7 @@ public class Robot extends TimedRobot {
      * autonomousCommand = new ExampleCommand(); break; }
      */
 
-     // schedule the autonomous command (example)
+    // schedule the autonomous command (example)
     if (m_autonomousCommand != null) {
       m_autonomousCommand.start();
     }
